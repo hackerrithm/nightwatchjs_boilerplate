@@ -1,0 +1,18 @@
+{
+  "name": "qw_nightwatchjs_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.json",
+  "scripts": {
+    "test": "nightwatch -e chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^80.0.1",
+    "geckodriver": "^1.19.1",
+    "mocha": "^7.1.1",
+    "nightwatch": "^1.3.4",
+    "selenium-server-standalone-jar": "^3.141.59"
+  }
+}
