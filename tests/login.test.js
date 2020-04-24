@@ -9,7 +9,7 @@ describe("Login Test", () => {
   });
 
   for (let count in loginData) {
-    it("verify that the user cannot sign up with an invalid email", client => {
+    it("verify that the user cannot sign up with an invalid username", client => {
       client.url("https://the-internet.herokuapp.com/login");
       console.log(loginData[count].validUsername);
       console.log(loginData[count].validPassword);
@@ -18,22 +18,7 @@ describe("Login Test", () => {
 
       loginPage.enterUsername(loginData[count].validUsername);
       loginPage.enterPassword(loginData[count].validPassword).clickSubmit();
-
-
-//       client.expect.element(".subheader").text.to.equal("Welcome to the Secure Area. When you are done click logout below.");
-//       loginPage.getErrorValues(function(res) {
-//         client.assert.equal(res, "Please enter a valid email address.");
-//       });
-
-      /*  **Using getText in the test instead of the page object***/
-
-//       loginPage.getText(loginPage.getAuthenticatedFieldValue, function(result){
-        //       console.log("result: ", result.value);
-              
-        //   loginPage.assert.equal(result.value, 'Welcome to the Secure Area. When you are done click logout below.')
-//       }); 
-
-      /* **using a built in Nightwatch Assertion** */
+      
       loginPage.assert.containsText(loginPage.elements.authenticatedSelector.selector, 'Welcome to the Secure Area. When you are done click logout below.')
     });
   }

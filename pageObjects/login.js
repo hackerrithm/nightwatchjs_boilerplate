@@ -1,5 +1,5 @@
 /*
- * Page object for signUp page
+ * Page object for login page
  */
 
 const elements = {
@@ -53,24 +53,6 @@ const commands = {
         clickSubmit() {
                 this.click(elements.submitButton)
         },
-
-        // /**
-        //  * @param {Number} index index of locator
-        //  * clicks a dropdown button
-        //  */
-        // clickADropDownButton(index) {
-        //         this.click(`.input-group:nth-child(${index}) .icon`)
-        // },
-
-        // /**
-        //  * @param {Number} index index of locator
-        //  * clicks a dropdown item
-        //  */
-        // clickADropDownItem(index) {
-        //         let el = `.input-group .menu.visible .item:nth-child(${index})`
-        //         this.waitForElementVisible(el)
-        //         this.click(el)
-        // },
 
         /**
          * @param {Number} index index of locator

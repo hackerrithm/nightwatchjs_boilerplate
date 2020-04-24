@@ -1,5 +1,5 @@
 /*
- * Page object for signUp page
+ * Page object for key press page
  */
 
 const elements = {
@@ -14,10 +14,8 @@ const elements = {
 const commands = {
 
         submitKeyPress(res) {
-                // return this.keys(value);
                 this.getText('#result', function (result) {
-                        console.log("result: result");
-                        
+
                         res(result.value)
                 });
                 return res
