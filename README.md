@@ -4,7 +4,8 @@ Nightwatch.js is an integrated, easy to use End-to-End testing solution for web 
 
 - Nightwatchjs is an open source tool with 10.1K GitHub stars and 985 GitHub forks.
 
-How to run:
+
+<h4>How to run:</h4>
 
 1. clone the repository
 2. run "npm i"
